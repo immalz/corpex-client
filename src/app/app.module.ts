@@ -12,6 +12,7 @@ import { privModule } from './@priv/priv.module';
 
 // componentes
 import { AppComponent } from './app.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AppComponent } from './app.component';
     AuthModule,
     privModule,
     PublicModule,
-    SharedModule
+    SharedModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

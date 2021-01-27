@@ -171,5 +171,8 @@
       }
     }
   },
-  "defaultProject": "corpex-client"
+  "defaultProject": "corpex-client",
+  "cli": {
+    "analytics": "e9d03d1e-5a96-4b8d-9709-d59605f1bd9e"
+  }
 }

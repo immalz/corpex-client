@@ -1,1 +1,63 @@
-<p>navbar works!</p>
+<nav class="nav containt {{storedTheme}}">
+    <a [routerLink]="['/']" class="izquierda">
+        <img src="assets/images/logo.png" alt="Corpex SAC" />
+    </a>
+    <div class="derecha">
+        <div class="botones">
+            <div class="dark-mode">
+                <button class="switch" id="switch" (click)="darkmode()">
+                <span><i class="fas fa-sun"></i></span>
+                <span><i class="fas fa-moon"></i></span>
+              </button>
+              </div>
+            <div>
+                <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+                    <button mat-button color="black" [routerLink]="['/acceder']">
+                        <mat-icon>login</mat-icon> Iniciar Sesión
+                    </button>
+                </ng-container>
+    
+                <ng-template #loggedIn>
+                    <button mat-icon-button color="warn">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                    <button mat-icon-button color="black">
+                        <mat-icon>shopping_cart</mat-icon>
+                    </button>
+                    <button mat-button color="black" [matMenuTriggerFor]="perfil">
+                        <mat-icon>account_circle</mat-icon> Mi Cuenta
+                    </button>
+                    <mat-menu #perfil="matMenu">
+                        <p>Bienvenido <br> <span>{{usuario.usuario}}</span></p>
+                        <button mat-menu-item>
+                            <mat-icon>emoji_people</mat-icon>
+                            <span>Informacion</span>
+                        </button>
+    
+                        <button mat-menu-item>
+                            <mat-icon>assignment</mat-icon>
+                            <span>Historial</span>
+                        </button>
+    
+                        <button mat-menu-item (click)="authService.loggout()">
+                            <mat-icon>exit_to_app</mat-icon>
+                            <span>Cerrar Sesión</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>
+            </div>
+        </div>
+        <div class="navegacion">
+            <ul>
+                <li><a [routerLink]="['/']">Inicio</a></li>
+                <li><a [routerLink]="['/nosotros']">Nosotros</a></li>
+
+                <li><a [routerLink]="['/servicios']">Servicios</a></li>
+
+                <li><a [routerLink]="['/contacto']">Contacto</a></li>
+
+                <li><a [routerLink]="['/productos']">Productos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

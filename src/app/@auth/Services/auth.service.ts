@@ -22,4 +22,18 @@ export class AuthService {
   signIn(user: User): any {
     return this.http.post<any>(this.URL + '/signin', user);
   }
+
+  loggedIn(): boolean{
+    return !!localStorage.getItem('token');
+  }
+
+  getToken(): any {
+    return localStorage.getItem('token');
+  }
+
+  loggout(): any {
+    this.router.navigate(['/acceder']);
+    localStorage.removeItem('token');
+  }
+
 }

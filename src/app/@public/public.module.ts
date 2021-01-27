@@ -13,6 +13,10 @@ import { NosotrosComponent } from './Pages/nosotros/nosotros.component';
 import { InicioComponent } from './Pages/inicio/inicio.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { NoisponibleComponent } from './Pages/no-disponible/no-disponible.component';
+import { PagesComponent } from './Pages/pages.component';
+import { MaterialModule } from '../material/material.module';
+import { AuthModule } from '../@auth/auth.module';
 
 
 @NgModule({
@@ -25,11 +29,15 @@ import { FooterComponent } from './Components/footer/footer.component';
     ColaboradoresComponent,
     PerfilComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    NoisponibleComponent,
+    PagesComponent
   ],
   imports: [
     CommonModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    MaterialModule,
+    AuthModule
   ],
   exports: [
     NavbarComponent,

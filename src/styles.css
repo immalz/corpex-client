@@ -10,3 +10,26 @@ body {
   padding: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+::root {
+  /*LIGHT MODE*/
+  --bg-theme-light: #fefefe;
+  --color-theme-light: #161616;
+
+  /*DARK MODE*/
+
+  --bg-theme-dark: #161616;
+  --color-theme-dark: #fefefe;
+}
+
+.mat-menu-content p {
+  text-align: center;
+}
+.mat-menu-content p span{
+  font-weight: 300;
+}
+.mat-menu-panel {
+  min-width: 200px !important;
+  position: relative;
+}
+

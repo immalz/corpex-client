@@ -6,18 +6,25 @@ import { Routes, RouterModule } from '@angular/router';
 import { NosotrosComponent } from './Pages/nosotros/nosotros.component';
 import { ContactoComponent } from './Pages/contacto/contacto.component';
 import { ServiciosComponent } from './Pages/servicios/servicios.component';
+import { NoisponibleComponent } from './Pages/no-disponible/no-disponible.component';
+import { PagesComponent } from './Pages/pages.component';
+import { ProductosComponent } from './Pages/productos/productos.component';
 
 const routes: Routes = [
-      {path: 'inicio', component: InicioComponent},
-      {path: 'nosotros', component: NosotrosComponent},
-      {path: 'servicios', component: ServiciosComponent},
-      {path: 'contacto', component: ContactoComponent},
-      {
-        path: '', pathMatch: 'full', redirectTo: 'inicio'
-      },
-      {
-        path: '**', pathMatch: 'full', redirectTo: 'inicio'
-      },
+  {
+    path: '', component: PagesComponent,
+    children: [
+      { path: '', component: InicioComponent },
+      { path: 'nosotros', component: NosotrosComponent },
+      { path: 'servicios', component: ServiciosComponent },
+      { path: 'productos', component:  ProductosComponent},
+      { path: 'contacto', component: ContactoComponent },
+
+    ]
+  },
+  {
+    path: '**', component: NoisponibleComponent
+  },
 ];
 
 @NgModule({

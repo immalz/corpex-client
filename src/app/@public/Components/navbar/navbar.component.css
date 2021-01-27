@@ -1,0 +1,170 @@
+    .nav {
+        width: 100vw;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background .5s;
+    }
+    .izquierda {
+        width: 120px;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .izquierda img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .derecha {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .derecha .botones {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40%;
+    }
+
+    .derecha .botones button {
+        margin: 0 5px;
+    }
+
+    .nav .dark-mode {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nav .switch {
+        display: flex;
+        width: 60px;
+        height: 30px;
+        background: #343d5b;
+        border-radius: 1000px;
+        border: none;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .nav .switch::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav.theme-dark  .switch {
+        background-color: #ffa500;
+        color: #000;
+    }
+    
+    .nav.theme-dark .switch::after {
+        right: 0;
+        left: unset;
+    }
+    
+    .nav .switch span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
+    
+
+    .derecha .navegacion {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+    }
+
+    .navegacion ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegacion ul li {
+        width: 75px;
+        list-style: none;
+        margin: auto 20px;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .navegacion ul li a {
+        text-decoration: none;
+        color: #000;
+    } 
+
+    .navegacion ul li::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #FF008C;
+        transition: width .5s;
+    }
+    .navegacion ul li::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 2px;
+        background: #FF008C;
+        transition: width .5s;
+    }
+
+    .navegacion ul li:hover::before {
+        width: 100%;
+    }
+
+
+    .navegacion ul li:hover::after {
+        width: 100%;
+    }
+
+
+    /*dark mode*/
+
+    .nav.theme-dark {
+        background: #222831;
+    }
+
+    .nav.theme-dark ul li a {
+        color: #fff;
+    }

@@ -9,10 +9,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // componentes
 import { LoginComponent } from './Pages/login/login.component';
+import { PagesComponent } from './Pages/pages.component';
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, PagesComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,
@@ -20,6 +21,6 @@ import { LoginComponent } from './Pages/login/login.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ], exports: [LoginComponent, PagesComponent]
 })
 export class AuthModule { }
