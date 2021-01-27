@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DarkmodeService } from 'src/app/@shared/Services/darkmode.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, public darkmodeService: DarkmodeService) { }
 
   ngOnInit(): void {
   }
+
+  contacto(): any {
+    this.router.navigate(['contacto']);
+  }
+
+
 
 }

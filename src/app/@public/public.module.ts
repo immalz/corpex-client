@@ -17,6 +17,7 @@ import { NoisponibleComponent } from './Pages/no-disponible/no-disponible.compon
 import { PagesComponent } from './Pages/pages.component';
 import { MaterialModule } from '../material/material.module';
 import { AuthModule } from '../@auth/auth.module';
+import { SharedModule } from '../@shared/shared.module';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { AuthModule } from '../@auth/auth.module';
     CommonModule,
     PublicRoutingModule,
     MaterialModule,
-    AuthModule
+    AuthModule,
+    SharedModule
   ],
   exports: [
     NavbarComponent,

@@ -1,6 +1,7 @@
-<nav class="nav containt {{storedTheme}}">
+<nav class="nav containt {{darkmodeService.storedTheme}}">
     <a [routerLink]="['/']" class="izquierda">
         <img src="assets/images/logo.png" alt="Corpex SAC" />
+        <p>CORPEX</p>
     </a>
     <div class="derecha">
         <div class="botones">
@@ -18,25 +19,25 @@
                 </ng-container>
     
                 <ng-template #loggedIn>
-                    <button mat-icon-button color="warn">
-                        <mat-icon>favorite</mat-icon>
-                    </button>
                     <button mat-icon-button color="black">
                         <mat-icon>shopping_cart</mat-icon>
                     </button>
-                    <button mat-button color="black" [matMenuTriggerFor]="perfil">
+                    <button mat-button color="black" class="btn_perfil" [matMenuTriggerFor]="perfil">
                         <mat-icon>account_circle</mat-icon> Mi Cuenta
                     </button>
                     <mat-menu #perfil="matMenu">
-                        <p>Bienvenido <br> <span>{{usuario.usuario}}</span></p>
+                        <div class="info">
+                        <img [src]="usuario.foto || 'assets/images/no-image.png'" alt="">
+                            <p>Bienvenido <br> <span>{{usuario.usuario}}</span></p>
+                        </div>
                         <button mat-menu-item>
                             <mat-icon>emoji_people</mat-icon>
-                            <span>Informacion</span>
+                            <span>Información</span>
                         </button>
     
                         <button mat-menu-item>
                             <mat-icon>assignment</mat-icon>
-                            <span>Historial</span>
+                            <span>Historial de compra</span>
                         </button>
     
                         <button mat-menu-item (click)="authService.loggout()">
@@ -58,6 +59,13 @@
 
                 <li><a [routerLink]="['/productos']">Productos</a></li>
             </ul>
+            <a class="empresa" [routerLink]="['/']">CORPEX <span>S.A.C</span></a>
+            <button mat-icon-button class="btn-navigation" [matMenuTriggerFor]="menu">
+                <mat-icon>menu</mat-icon>
+            </button>        
         </div>
+        <mat-menu class="menu__nav" #menu="matMenu" xPosition="before">
+            
+        </mat-menu>
     </div>
 </nav>

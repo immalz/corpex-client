@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/@auth/Services/auth.service';
+import { DarkmodeService } from 'src/app/@shared/Services/darkmode.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +10,8 @@ import { AuthService } from 'src/app/@auth/Services/auth.service';
 export class NavbarComponent implements OnInit {
 
   usuario;
-  storedTheme: string = localStorage.getItem('theme-color');
 
-  constructor(public authService: AuthService) { }
+  constructor(public authService: AuthService, public darkmodeService: DarkmodeService) { }
 
   ngOnInit(): void {
   this.usuario = JSON.parse(localStorage.getItem('usuario'));
@@ -19,17 +19,7 @@ export class NavbarComponent implements OnInit {
   }
 
   darkmode(): any {
-    if (this.storedTheme === 'theme-dark') {
-
-      localStorage.setItem('theme-color', 'theme-light');
-      this.storedTheme = localStorage.getItem('theme-color');
-
-    } else {
-
-      localStorage.setItem('theme-color', 'theme-dark');
-      this.storedTheme = localStorage.getItem('theme-color');
-
-    }
+    this.darkmodeService.darkmode();
   }
 
 }

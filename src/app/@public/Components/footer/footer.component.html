@@ -1,1 +1,48 @@
-<p>footer works!</p>
+<div class="div {{darkmodeService.storedTheme}}">
+    <footer class="footer">
+        <div class="footer__top">
+            <h2>Inicia tu proyecto con nosotros, <span (click)="contacto()">escribenos</span></h2>
+            <p>931947536 / 953979412 / 999974890</p>
+        </div>
+        <div class="espacio"></div>
+        <div class="footer__bottom">
+            <div class="seccion1">
+                <img src="assets/images/logo.png" alt="Corpex SAC" />
+                <h3>CORPEX</h3>
+                <p>Una empresa especialista en el rubro de Tecnologías de la Información para un mundo digital.</p>
+    
+            <div class="sociales">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+            </div>
+            </div>
+            <div class="seccion2">
+                <div class="seccion2__servicios">
+                    <h4>Servicios</h4>
+                    <a>Marketing & SEO</a>
+                    <a>Desarrollo Web</a>
+                    <a>Dominios</a>
+                    <a>Hosting</a>
+                </div>
+                <div class="seccion2__enlaces">
+                    <h4>Enlaces</h4>
+                    <a routerLink="/nosotros">Sobre nosotros</a>
+                    <a routerLink="/contacto">Contacto</a>
+                    <a routerLink="/productos">Productos</a>
+                    <a routerLink="/servicios">Servicios</a>
+                </div>
+    
+            </div>
+            <div class="seccion3">
+                <h4>Subscribirse</h4>
+                <form class="newsletter_form">
+                    <input type="email" placeholder="Ingrese su correo">
+                    <button type="submit">Subscribirse</button>
+                </form>
+                <p>Recibirá nuestras novedades y aportes con las empresas.</p>
+            </div>
+        </div>
+    
+    </footer>
+</div>

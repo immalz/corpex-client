@@ -2,30 +2,37 @@
 
 html,
 body {
-    width: 100%;
-  height: 100vh;
-}
-body {
+  width: 100%;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-::root {
+:root {
   /*LIGHT MODE*/
-  --bg-theme-light: #fefefe;
-  --color-theme-light: #161616;
+  --bg-theme-light: #f5f4f4;
+  --color-theme-light: #393e46;
 
   /*DARK MODE*/
 
-  --bg-theme-dark: #161616;
-  --color-theme-dark: #fefefe;
+  --bg-theme-dark: #001d38;
+  --color-theme-dark: #f5f4f4;
+
+  /*COLORES*/
+
+  --facebook: #0071bc;
+  --twitter: #00acee;
+  --youtube: #b2071d;
+  --instagram: #dd2a7b;
 }
 
 .mat-menu-content p {
   text-align: center;
 }
-.mat-menu-content p span{
+.mat-menu-content p span {
   font-weight: 300;
 }
 .mat-menu-panel {
@@ -33,3 +40,8 @@ body {
   position: relative;
 }
 
+span.mat-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
