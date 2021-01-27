@@ -148,7 +148,7 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background: #ff008c;
+  background: #f58634;
   transition: width 0.5s;
 }
 .navegacion ul li::before {
@@ -158,7 +158,7 @@
   right: 0;
   width: 0%;
   height: 2px;
-  background: #ff008c;
+  background: #f58634;
   transition: width 0.5s;
 }
 .navegacion ul li.active::before,
