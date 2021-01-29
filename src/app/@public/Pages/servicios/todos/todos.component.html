@@ -1,0 +1,22 @@
+<div class="total {{darkmodeService.storedTheme}}">
+    <div class="card__circle card__circle1"></div>
+    <div class="card__circle card__circle2"></div>
+    <div class="containt animated fadeIn">
+        <h1>Servicios</h1>
+        <div class="cards">
+            <div class="card" *ngFor="let servicio of servicios">
+                <div class="card__icon">
+                    <div class="image">
+                        <img [src]="servicio.icon" [alt]="servicio.titulo">
+                    </div>
+                    <h3>{{servicio.titulo}}</h3>
+                </div>
+                <div class="card__description">
+                    <p>{{servicio.descripcion}}</p>
+                    <button routerLink="{{servicio.enlace}}" mat-button>Más información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>

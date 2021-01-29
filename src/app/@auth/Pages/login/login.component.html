@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container {{modo}}">
     <div class="forms-container">
       <div class="signin-signup">
 
@@ -73,7 +73,7 @@
           <p>
             Para poder realizar compras en esta pagina web necesitas una cuenta.
           </p>
-          <button class="btn transparent" id="sign-up-btn">
+          <button class="btn transparent" (click)="modo = !modo"  id="sign-up-btn">
             Registrarse
           </button>
         </div>
@@ -85,7 +85,7 @@
           <p>
             Si ya tienes una cuenta en esta pagina, accede desde aquí.
           </p>
-          <button class="btn transparent" id="sign-in-btn">
+          <button class="btn transparent" (click)="modo = !modo" id="sign-in-btn">
             Iniciar Sesión
           </button>
         </div>

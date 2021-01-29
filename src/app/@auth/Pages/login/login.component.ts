@@ -15,8 +15,9 @@ export class LoginComponent implements OnInit {
   iniciarSesion: FormGroup;
   Registrarse: FormGroup;
 
+  modo = false;
+
   constructor(
-    private scriptService: ScriptsService,
     private authService: AuthService,
     private router: Router,
     private builder: FormBuilder
@@ -27,14 +28,13 @@ export class LoginComponent implements OnInit {
     });
 
     this.Registrarse = this.builder.group({
-      usuario: ['', Validators.compose([Validators.required, Validators.minLength(8)])],
+      usuario: ['', Validators.compose([Validators.required, Validators.minLength(6), Validators.maxLength(15)])],
       correo: ['', Validators.compose([Validators.required, Validators.email])],
-      contraseña: ['', Validators.compose([Validators.required, Validators.minLength(8)])]
+      contraseña: ['', Validators.compose([Validators.required, Validators.minLength(6)])]
     });
   }
 
   ngOnInit(): void {
-    this.scriptService.Carga(['login']);
   }
 
   SignIn(): any {
@@ -58,24 +58,24 @@ export class LoginComponent implements OnInit {
   }
 
   Registro(): any {
-
-      this.authService.signUp(this.Registrarse.value)
-          .subscribe(
-            res => {
-              Swal.fire(
-                'Felicidades!',
-                `Se ha completado su registro!`,
-                'success'
-              )
-            },
-            err => {
-              Swal.fire(
-                'Lo sentimos!',
-                `El proceso de validacion ha fallado, vuelve a intentarlo!`,
-                'error'
-              );
-            }
+    this.authService.signUp(this.Registrarse.value)
+      .subscribe(
+        res => {
+          Swal.fire(
+            'Felicidades!',
+            `Se ha completado su registro!`,
+            'success'
           );
-  }
 
+          this.modo = false;
+        },
+        err => {
+          Swal.fire(
+            'Lo sentimos!',
+            `El proceso de validacion ha fallado, vuelve a intentarlo!`,
+            'error'
+          );
+        }
+      );
+  }
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { PublicRoutingModule } from './public-routing.module';
 
 // componentes
@@ -18,6 +19,10 @@ import { PagesComponent } from './Pages/pages.component';
 import { MaterialModule } from '../material/material.module';
 import { AuthModule } from '../@auth/auth.module';
 import { SharedModule } from '../@shared/shared.module';
+import { SeoSemComponent } from './Pages/servicios/seo-sem/seo-sem.component';
+import { MarketingComponent } from './Pages/servicios/marketing/marketing.component';
+import { SocialesComponent } from './Pages/servicios/sociales/sociales.component';
+import { TodosComponent } from './Pages/servicios/todos/todos.component';
 
 
 @NgModule({
@@ -32,7 +37,11 @@ import { SharedModule } from '../@shared/shared.module';
     NavbarComponent,
     FooterComponent,
     NoisponibleComponent,
-    PagesComponent
+    PagesComponent,
+    SeoSemComponent,
+    MarketingComponent,
+    SocialesComponent,
+    TodosComponent
   ],
   imports: [
     CommonModule,

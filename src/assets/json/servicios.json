@@ -1,0 +1,16 @@
+[{
+    "icon": "assets/images/iconos/siete.svg",
+    "titulo": "SEO/SEM",
+    "descripcion": "El posicionamiento en buscadores, optimización en motores de búsqueda o SEO (del inglés search engine optimization), es un conjunto de acciones orientadas a mejorar el posicionamiento de un sitio web en la lista de resultados. La mercadotecnia en buscadores web (SEM por las siglas del inglés Search Engine Marketing) es una forma de mercadotecnia en Internet que promueve el contenido digital para aumentar la visibilidad y posicionamiento en las páginas de resultados del motor de búsqueda (SERP).",
+    "enlace": "/servicios/seo-sem"
+},{
+    "icon": "assets/images/iconos/nueve.svg",
+    "titulo": "Paginas y Aplicaciones WEB",
+    "descripcion": "Crea potentes aplicaciones profesionales que se ejecutan en navegadores de distintos dispositivos, sin necesidad de plugins y con una gran Experiencia de Uso. Las Aplicaciones Web son actualmente la alternativa para desarrollo de software más demandada por todo tipo de empresas.",
+    "enlace": "/servicios/medios-sociales"
+},{
+    "icon": "assets/images/iconos/ocho.svg",
+    "titulo": "Marketing Digital",
+    "descripcion": "El marketing digital es la aplicación de las estrategias de comercialización llevadas a cabo en los medios digitales. Todas las técnicas del mundo off-line son imitadas y traducidas a un nuevo mundo, el mundo online. En el ámbito digital aparecen nuevas herramientas como la inmediatez, las nuevas redes que surgen día a día, y la posibilidad de mediciones reales de cada una de las estrategias empleadas.",
+    "enlace": "/servicios/marketing-digital"
+}]

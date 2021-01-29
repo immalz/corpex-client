@@ -1,6 +1,7 @@
 .div {
   width: 100%;
   background: var(--bg-theme-light);
+  position: relative;
 }
 .footer {
   width: 80%;

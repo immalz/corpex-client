@@ -1,1 +1,76 @@
-<p>nosotros works!</p>
+<div class="total {{darkmodeService.storedTheme}}">
+    <div class="card__circle card__circle1"></div>
+    <div class="card__circle card__circle2"></div>
+    <div class="containt animated fadeIn">
+        <section>
+            <h1>Sobre Nosotros</h1>
+            <div class="contenido">
+                <div class="contenido__image">
+                    <img src="assets/images/nosotros.webp" alt="Nosotros Corpex">
+                </div>
+                <div class="contenido__text">
+                    <h2>somos una empresa SEO
+                        especializada en desarrollo web</h2>
+                    <p>Trabajamos en base a los objetivos trazados por su empresa. Guiamos su ampresa a conseguir resultados
+                        con calidad de servicio.</p>
+                    <div class="btn">
+                        <a routerLink="/nosotros/colaboradores" mat-flat-button class="boxed-btn3">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contenido">
+                <div class="contenido__image">
+                    <img src="assets/images/eleccion.webp" alt="Nosotros Corpex">
+                </div>
+                <div class="contenido__text">
+                    <h2>¿Por qué Elegirnos?</h2>
+                    <mat-accordion>
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    ¿Le preocupa la forma de trabajo?
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p>Desarrollamos cada proyecto en constante interacción con su empresa.</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel (opened)="panelOpenState = false" (closed)="panelOpenState = true">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    ¿Preocupados por el mantenimiento?
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p>Garantizamos un acompañamiento constante y lograr el aprendizaje de su equipo.</p>
+                        </mat-expansion-panel>
+                        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    ¿Preocupado por el mundo digital?
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <p>Su empresa debe enfocarse al core del negocio, nosotros nos encargamos de asegurar su
+                                existencia en el mundo digital.</p>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="secundario">
+        <h1>Contamos con el potencial necesario para rankear su negocio</h1>
+        <h3>Guiaremos su empresa hacie el logro de la obtención de buenos indicadores en el mundo digital</h3>
+
+        <div class="cards">
+            <div class="card" *ngFor="let tarjeta of tarjetas">
+                <div class="card__icon">
+                    <img [src]="tarjeta.icon" [alt]="titulo">
+                </div>
+                <div class="card__text">
+                    <h4>{{tarjeta.titulo}}</h4>
+                    <p>{{tarjeta.descripcon}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

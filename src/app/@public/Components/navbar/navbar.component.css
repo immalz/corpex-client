@@ -5,8 +5,9 @@
   justify-content: center;
   align-items: center;
   transition: background 0.5s;
-  position: relative;
   background: var(--bg-theme-light);
+  position: relative;
+  z-index: 4;
 }
 .izquierda {
   width: 120px;
@@ -124,7 +125,9 @@
   margin: 0;
   padding: 0;
 }
-
+.navegacion ul li:nth-child(1) {
+  margin: 0 10px;
+}
 .navegacion ul li {
   width: 75px;
   list-style: none;
@@ -134,11 +137,21 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
-
+.navegacion ul li a .mat-icon {
+  font-size: 15px;
+  height: 15px;
+  width: 15px;
+}
 .navegacion ul li a {
   text-decoration: none;
   color: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navegacion ul li::after {

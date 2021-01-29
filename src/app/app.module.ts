@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-
 // modulos
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

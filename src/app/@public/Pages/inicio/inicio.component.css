@@ -1,7 +1,17 @@
-.main {
+.total {
   width: 100%;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
+}
+.seccion2,
+.seccion1 {
+  width: 100%;
+  min-height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.seccion2 {
+  min-height: 100vh;
+  position: relative;
 }

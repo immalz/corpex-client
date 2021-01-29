@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkmodeService } from 'src/app/@shared/Services/darkmode.service';
+import { JsonService } from '../../Services/json.service';
 
 @Component({
   selector: 'app-nosotros',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor() { }
+ panelOpenState = false;
+ tarjetas;
+
+   constructor(public darkmodeService: DarkmodeService,
+               private jsonService: JsonService) { }
 
   ngOnInit(): void {
+    this.jsonService.getJson('assets/json/tarjetas.json')
+    .subscribe(
+      res => {this.tarjetas = res; },
+      err => {console.log(err); }
+    );
   }
 
 }

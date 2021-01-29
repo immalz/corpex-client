@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "~swiper/swiper-bundle.min.css";
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -13,22 +14,29 @@ body {
 
 :root {
   /*LIGHT MODE*/
-  --bg-theme-light: #f5f4f4;
+  --bg-theme-light: #fff;
+  --bg-theme-light-base: #dfe9f2;
   --color-theme-light: #393e46;
 
   /*DARK MODE*/
 
   --bg-theme-dark: #001d38;
+  --bg-theme-dark-base: #03506f;
   --color-theme-dark: #f5f4f4;
 
   /*COLORES*/
-
   --facebook: #0071bc;
   --twitter: #00acee;
   --youtube: #b2071d;
   --instagram: #dd2a7b;
 }
 
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .mat-menu-content p {
   text-align: center;
 }
@@ -44,4 +52,92 @@ span.mat-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.total {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  position: relative;
+  overflow: hidden;
+}
+.total .card__circle {
+  position: fixed;
+  width: 350px;
+  height: 350px;
+  transition: 0.5s;
+  background: linear-gradient(
+    130deg,
+    rgba(77, 73, 191, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 50%;
+}
+
+.total .card__circle1 {
+  top: 10%;
+  left: 5%;
+}
+
+.total .card__circle2 {
+  bottom: 5%;
+  right: 15%;
+  background: linear-gradient(
+    130deg,
+    rgba(5, 219, 242, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+.total.theme-light h1,
+.total.theme-light h2,
+.total.theme-light h3,
+.total.theme-light h4,
+.total.theme-light h5,
+.total.theme-light h6,
+.total.theme-light p {
+  color: var(--color-theme-light);
+}
+.total.theme-light {
+  background: var(--bg-theme-light-base);
+}
+
+/*DARK MODE*/
+.total.theme-dark {
+  background: var(--bg-theme-dark-base);
+}
+
+.total.theme-dark h1,
+.total.theme-dark h2,
+.total.theme-dark h3,
+.total.theme-dark h4,
+.total.theme-dark h5,
+.total.theme-dark h6,
+.total.theme-dark p {
+  color: var(--color-theme-dark);
+}
+
+/*-----------------------*/
+
+@media (max-width: 700px) {
+  .total .card__circle {
+    width: 250px;
+    height: 250px;
+    transition: 0.5s;
+  }
+  .total .card__circle1 {
+    top: 10%;
+    left: -5%;
+  }
+
+  .total .card__circle2 {
+    bottom: 15%;
+    right: -10%;
+    background: linear-gradient(
+      130deg,
+      rgba(5, 219, 242, 0.8),
+      rgba(255, 255, 255, 0.2)
+    );
+  }
+  h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
 }

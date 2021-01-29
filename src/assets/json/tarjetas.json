@@ -1,0 +1,46 @@
+[{
+    "icon": "assets/images/iconos/uno.svg",
+    "titulo": "Diseño personalizado",
+    "descripcon": "Muestre a sus clientes una buena imagen."
+},{
+    "icon": "assets/images/iconos/dos.svg",
+    "titulo": "Resultados de búsqueda pagado",
+    "descripcon": "La mejor estrategia para su empresa con los mejores algoritmos dentro de los motores de búsqueda."
+},{
+    "icon": "assets/images/iconos/tres.svg",
+    "titulo": "Opciones de búsqueda Global",
+    "descripcon": "Alcance global y nos solo local."
+},{
+    "icon": "assets/images/iconos/cuatro.svg",
+    "titulo": "Email Marketing",
+    "descripcon": "Estrategia de marketing vía correo electrónico."
+},{
+    "icon": "assets/images/iconos/cinco.svg",
+    "titulo": "Software personalizado",
+    "descripcon": "Su empresa no debe hacer lo que el software puede sino el software debe hacer lo que su empresa necesita."
+},{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Dominios",
+    "descripcon": "Nos encargamos de gestionar la obtención de su dominio."
+},{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Hosting",
+    "descripcon": "Nos encargamos de gestionar la obtención de su dominio."
+},{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Correo profesional",
+    "descripcon": "Nos encargamos de gestionar la obtención de su correo profesional."
+},{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Seguridad",
+    "descripcon": "Nos encargamos de gestionar la obtención de la seguridad SSL, seguridad del sitio web de su empresa."
+},{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Aplicaciones Web",
+    "descripcon": "Desarrollamos aplicaciones Web sea para escritorio o bajo entorno web."
+},
+{
+    "icon": "assets/images/iconos/seis.svg",
+    "titulo": "Big Data",
+    "descripcon": "Procesamiento de grandes volúmenes de datos."
+}]
