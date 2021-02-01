@@ -22,6 +22,9 @@ import { SeoSemComponent } from './Pages/servicios/seo-sem/seo-sem.component';
 import { MarketingComponent } from './Pages/servicios/marketing/marketing.component';
 import { SocialesComponent } from './Pages/servicios/sociales/sociales.component';
 import { TodosComponent } from './Pages/servicios/todos/todos.component';
+import { ComentarioComponent } from './Components/comentario/comentario.component';
+import { ProductoComponent } from './Components/producto/producto.component';
+import { ProyectosComponent } from './Pages/proyectos/proyectos.component';
 
 
 @NgModule({
@@ -40,7 +43,10 @@ import { TodosComponent } from './Pages/servicios/todos/todos.component';
     SeoSemComponent,
     MarketingComponent,
     SocialesComponent,
-    TodosComponent
+    TodosComponent,
+    ComentarioComponent,
+    ProductoComponent,
+    ProyectosComponent
   ],
   imports: [
     CommonModule,

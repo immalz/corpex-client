@@ -1,0 +1,10 @@
+[
+    {
+        "nombre":"Kaspersky Anti-Virus",
+        "precio": 45,
+        "imagen": "assets/images/productos/anti.png",
+        "titulodescripcion": "Aprovecha nuestra promoción en licencias antivirus kaspersky",
+        "descripcion": "Es un antivirus que realiza una excelente combinación de protección reactiva y preventiva, protegiéndote eficazmente de virus, troyanos y todo tipo de programas malignos. Adicionalmente, dentro del grupo de programas malignos, Kaspersky Anti-Virus también se encarga de proteger tu Registro y todo tu sistema contra programas potencialmente peligrosos como los spyware.",
+        "enlace": "www.google.com"
+    }
+]

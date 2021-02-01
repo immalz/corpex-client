@@ -6,92 +6,35 @@
             <img src="assets/images/inicio.svg" alt="corpex inicio">
             <div class="textos">
                 <h1>¿BUSCAR POSICIONAR EL CONTENIDO DE TU EMPRESA?</h1>
-                <button mat-raised-button>Conocenos</button>
+                <button mat-raised-button routerLink="nosotros">Conocenos</button>
             </div>
             <!-- <h2>En CORPEX planificamos, diseñamos y desarrollamos un servicio que se ajuste a las necesidades de su empresa..</h2> -->
         </section>
         <section class=" seccion2">
-            <h1>Comentarios</h1>
+            <h1>Porque son nuestros clientes quienes avalan la calidad de nuestro servicio</h1>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonialBox">
-                            <img src="assets/images/quote.png" class="quote">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium ullam mollitia accusamus doloribus aperiam sint reiciendis quo provident porro saepe</p>
-                                <div class="details">
-                                    <div class="imgBx">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <h3>Someone Famous <br><span>Creative Designer</span></h3>
-                                </div>
+
+                    <div class="swiper-slide" *ngFor="let comentario of comentarios">
+                        <img src="assets/images/quote.png" class="quote">
+                        <div class="texto">
+                            <p>{{comentario.descripcion}}</p>
+                            <p>{{comentario.descripcion2}}</p>
+                        </div>
+                        <div class="detalles">
+                            <div class="imgBx">
+                                <img [src]="comentario.imagen" [alt]="comentario.nombre">
                             </div>
+                            <h4>{{comentario.nombre}}<br><span>{{comentario.area}}</span></h4>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testimonialBox">
-                            <img src="assets/images/quote.png" class="quote">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium ullam mollitia accusamus
-                                    doloribus aperiam sint reiciendis quo provident porro saepe</p>
-                                <div class="details">
-                                    <div class="imgBx">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <h3>Someone Famous <br><span>Creative Designer</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonialBox">
-                            <img src="assets/images/quote.png" class="quote">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium ullam mollitia accusamus
-                                    doloribus aperiam sint reiciendis quo provident porro saepe</p>
-                                <div class="details">
-                                    <div class="imgBx">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <h3>Someone Famous <br><span>Creative Designer</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonialBox">
-                            <img src="assets/images/quote.png" class="quote">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium ullam mollitia accusamus
-                                    doloribus aperiam sint reiciendis quo provident porro saepe</p>
-                                <div class="details">
-                                    <div class="imgBx">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <h3>Someone Famous <br><span>Creative Designer</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonialBox">
-                            <img src="assets/images/quote.png" class="quote">
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium ullam mollitia accusamus
-                                    doloribus aperiam sint reiciendis quo provident porro saepe</p>
-                                <div class="details">
-                                    <div class="imgBx">
-                                        <img src="assets/images/logo.png" alt="">
-                                    </div>
-                                    <h3>Someone Famous <br><span>Creative Designer</span></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <h3>¿Quieres dejar una reseña?</h3>
+            <button mat-flat-button (click)="nuevoComentario()">Agregar</button>
         </section>
     </div>
 </div>
-

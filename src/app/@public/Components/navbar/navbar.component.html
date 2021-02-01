@@ -55,11 +55,10 @@
 
                 <li><a [matMenuTriggerFor]="servicios" >Servicios<mat-icon>expand_more</mat-icon>
                 </a></li>
-
+                <li><a [routerLink]="['/proyectos']">Proyectos</a></li>
                 <li><a [routerLink]="['/productos']">Productos</a></li>
 
                 <li><a [routerLink]="['/contacto']">Contacto</a></li>
-
             </ul>
             <a class="empresa" [routerLink]="['/']">CORPEX <span>S.A.C</span></a>
             <button mat-icon-button class="btn-navigation" [matMenuTriggerFor]="menu">
@@ -81,6 +80,10 @@
             <button mat-menu-item [routerLink]="['/servicios']">
                 <mat-icon>catching_pokemon</mat-icon>
                 <span>Servicios</span>
+            </button>
+            <button mat-menu-item [routerLink]="['/proyectos']">
+                <mat-icon>integration_instructions</mat-icon>
+                <span>Proyectos</span>
             </button>
             
             <button mat-menu-item [routerLink]="['/productos']">

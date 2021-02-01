@@ -1,0 +1,16 @@
+.form {
+  width: 350px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-theme-light);
+}
+
+.example-full-width {
+  width: 100%;
+}

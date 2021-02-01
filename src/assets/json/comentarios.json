@@ -1,43 +1,44 @@
 [
     {
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
+        "nombre": "Andrea Gutierrez",
+        "area": "Administradora",
+        "imagen": "assets/images/perfilm.webp",
+        "descripcion": "Vi la aplicacion de metodologías ágiles",
+        "descripcion2": "El pase a producción esperado fue satisfactorio."
     },
     {
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
+        "nombre": "Carlos Brios",
+        "area": "CEO en Lampadia",
+        "imagen": "assets/images/perfil.webp",
+        "descripcion": "Observé un gran potencial en CORPEX.COM",
+        "descripcion2": "Cada hito del proyecto me fue reportado, logrando absolver dudas en linea, estupenda labor, los recomiendo!"
     },
     {
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
-    },{
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
-    },{
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
+        "nombre": "Patricia Ferrari",
+        "area": "Gerente General IdeaMed",
+        "imagen": "assets/images/perfilm.webp",
+        "descripcion": "Me sorprendío el trabajo desplegado por CORPEX.COM",
+        "descripcion2": "Fue sencillo lograr interactuar con el equipo y lograr resultados en poco tiempo, muy recomendable."
     },
     {
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
+        "nombre": "Andrea Gutierrez",
+        "area": "Administradora",
+        "imagen": "assets/images/perfilm.webp",
+        "descripcion": "Vi la aplicacion de metodologías ágiles",
+        "descripcion2": "El pase a producción esperado fue satisfactorio."
     },
     {
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
-    },{
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
-    },{
-        "nombre": "Perona 1",
-        "imagen": "imagen",
-        "descripcion": "me ha gustado su servicio..."
+        "nombre": "Carlos Brios",
+        "area": "CEO en Lampadia",
+        "imagen": "assets/images/perfil.webp",
+        "descripcion": "Observé un gran potencial en CORPEX.COM",
+        "descripcion2": "Cada hito del proyecto me fue reportado, logrando absolver dudas en linea, estupenda labor, los recomiendo!"
+    },
+    {
+        "nombre": "Patricia Ferrari",
+        "area": "Gerente General IdeaMed",
+        "imagen": "assets/images/perfilm.webp",
+        "descripcion": "Me sorprendío el trabajo desplegado por CORPEX.COM",
+        "descripcion2": "Fue sencillo lograr interactuar con el equipo y lograr resultados en poco tiempo, muy recomendable."
     }
 ]

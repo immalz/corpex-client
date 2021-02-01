@@ -1,0 +1,45 @@
+.proyectos {
+  width: 80%;
+  min-height: 600px;
+  margin: auto;
+}
+.proyecto {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  position: relative;
+  padding: 15px;
+  border-bottom: 1px solid #979797;
+}
+.proyecto__descripcion,
+.proyecto__img {
+  width: 50%;
+  height: 100%;
+}
+
+.proyecto__descripcion h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.proyecto__descripcion p {
+  margin: 0 10px;
+}
+
+.proyecto__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .proyecto {
+    flex-direction: column;
+  }
+  .proyecto__descripcion,
+  .proyecto__img {
+    width: 100%;
+    height: 50%;
+  }
+}

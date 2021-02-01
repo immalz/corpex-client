@@ -14,6 +14,8 @@ import { TodosComponent } from './Pages/servicios/todos/todos.component';
 import { MarketingComponent } from './Pages/servicios/marketing/marketing.component';
 import { SocialesComponent } from './Pages/servicios/sociales/sociales.component';
 import { ColaboradoresComponent } from './Pages/colaboradores/colaboradores.component';
+import { ProductoComponent } from './Components/producto/producto.component';
+import { ProyectosComponent } from './Pages/proyectos/proyectos.component';
 
 const routes: Routes = [
   {
@@ -32,8 +34,10 @@ const routes: Routes = [
           {path: 'medios-sociales', component: SocialesComponent},
         ]
       },
+         { path: 'proyectos', component: ProyectosComponent },
       { path: 'contacto', component: ContactoComponent },
       { path: 'productos', component:  ProductosComponent},
+      {path: 'productos/:nombre', component: ProductoComponent}
 
     ]
   },

@@ -1,0 +1,20 @@
+<div class="total {{darkmodeService.storedTheme}}">
+    <div class="producto animated fadeIn" *ngIf="producto">
+        <h1>{{producto.nombre}}</h1>
+
+        <div class="detalles">
+            <div class="detalles__img">
+                <img [src]="producto.imagen" [alt]="producto.nombre">
+            </div>
+            <div class="detalles__descripcion">
+                <h2>{{producto.titulodescripcion}}</h2>
+                <p>{{producto.descripcion}}</p>
+                <button mat-flat-button (click)="comprar(producto)">Comprar Ahora</button>
+
+                <p>Para mas información acerca del producto, le invitamos a leer su pagina oficial.</p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>

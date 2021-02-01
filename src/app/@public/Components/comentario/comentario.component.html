@@ -1,0 +1,20 @@
+<form [formGroup]="comentarioNuevo" class="form">
+    <h2>Dejanos un comentario</h2>
+    <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" placeholder="nombre completo">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Cargo</mat-label>
+        <input matInput formControlName="cargo" placeholder="cargo en su empresa">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Titulo del mensaje</mat-label>
+        <input matInput formControlName="titulo" placeholder="titulo de su reseña">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Mensaje</mat-label>
+        <textarea  matInput formControlName="mensaje" placeholder="escriba aqui su mensaje..."></textarea>
+    </mat-form-field>
+    <button [disabled]="comentarioNuevo.invalid" mat-flat-button (click)="SignIn()">Enviar</button>
+</form>
