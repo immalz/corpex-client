@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { SwiperModule } from 'swiper/angular';
 import { PublicRoutingModule } from './public-routing.module';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // componentes
 import { PerfilComponent } from './Pages/perfil/perfil.component';
 import { ColaboradoresComponent } from './Pages/colaboradores/colaboradores.component';
@@ -48,7 +47,10 @@ import { TodosComponent } from './Pages/servicios/todos/todos.component';
     PublicRoutingModule,
     MaterialModule,
     AuthModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SwiperModule
   ],
   exports: [
     NavbarComponent,

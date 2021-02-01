@@ -1,5 +1,46 @@
 <div class="total {{darkmodeService.storedTheme}}">
     <div class="card__circle card__circle1"></div>
     <div class="card__circle card__circle2"></div>
-    <h1 class="animated fadeIn">CONTACTO CORPEX</h1>
+    <div class="contacto animated fadeIn">
+        <div class="titulo">
+            <h1 >CONTACTANOS</h1>
+            <h3>Tómese un momento para ponerse en contacto, nos comunicaremos con usted en breve.</h3>
+        </div>
+
+        <form [formGroup]="contacto" class="form">
+
+            <div class="form__izquierda">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Asunto</mat-label>
+                    <input formControlName="asunto" type="text" matInput placeholder="¿En que servicio estas interesado?">
+                </mat-form-field>
+                
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName="nombre" type="text" matInput placeholder="Pedro Nuñez...">
+                </mat-form-field>
+                
+                <mat-form-field class="example-full-width">
+                    <mat-label>Correo Electronico</mat-label>
+                    <input type="email" formControlName="correo" matInput placeholder="ejemplo@gmail.com">
+                </mat-form-field>
+                
+                <mat-form-field class="example-full-width">
+                    <mat-label>Celular</mat-label>
+                    <input formControlName="celular" type="number" matInput placeholder="+51 9439672363">
+                </mat-form-field>
+
+            </div>
+
+        <div class="form__derecha">
+                <mat-form-field class="example-full-width texarea">
+                    <mat-label>Mensaje</mat-label>
+                    <textarea type="text" formControlName="mensaje" matInput placeholder="Escribe tu mensaje aqui..."></textarea>
+                </mat-form-field>
+                <button mat-raised-button [disabled]="contacto.invalid" (click)="enviarCorreo()">Enviar mensaje</button>
+        </div>
+
+
+        </form>
+    </div>
 </div>

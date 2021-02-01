@@ -5,7 +5,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -113,7 +113,23 @@ span.mat-button-wrapper {
 .total.theme-dark p {
   color: var(--color-theme-dark);
 }
+.mat-form-field-flex,
+.example-full-width.texarea .mat-form-field-wrapper {
+  height: 100%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
 /*-----------------------*/
 
 @media (max-width: 700px) {
