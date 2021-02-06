@@ -1,5 +1,19 @@
 <div class="total {{darkmodeService.storedTheme}}">
     <div class="card__circle card__circle1"></div>
     <div class="card__circle card__circle2"></div>
-    <h1 class="animated fadeIn">MARKETING CORPEX</h1>
+    <div class="content animated fadeIn" *ngIf="servicios">
+        <div class="content__banner">
+            <img [src]="servicios.imagen" [alt]="servicios.titulo">
+        </div>
+        <div class="content__texto">
+            <h1>{{servicios.titulo}}</h1>
+
+            <p>{{servicios.descripcion}}</p>
+        </div>
+    </div>
+    <div class="regresar">
+        <button routerLink="/servicios" mat-icon-button color="primary">
+            <mat-icon>undo</mat-icon>
+        </button>
+    </div>
 </div>

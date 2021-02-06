@@ -21,7 +21,7 @@ export class TodosComponent implements OnInit {
     .subscribe(
       res => {this.servicios = res; },
       err => {console.log(err); }
-    )
+    );
   }
 
 }

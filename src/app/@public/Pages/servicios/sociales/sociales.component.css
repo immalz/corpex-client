@@ -1,0 +1,54 @@
+.content {
+  width: 80%;
+  margin: auto;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+.content__texto,
+.content__banner {
+  width: 50%;
+  min-height: 450px;
+  overflow: hidden;
+}
+
+.content__banner img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.content__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content__texto p {
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.regresar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.regresar button .mat-icon {
+  font-size: 25px;
+}
+@media (max-width: 1150px) {
+  .content {
+    flex-direction: column;
+  }
+  .content__texto,
+  .content__banner {
+    width: 100%;
+    min-height: 350px;
+  }
+  .content__banner img {
+    height: 300px;
+  }
+}
